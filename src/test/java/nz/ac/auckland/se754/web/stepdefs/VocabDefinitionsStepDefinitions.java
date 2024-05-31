@@ -63,6 +63,7 @@ public class VocabDefinitionsStepDefinitions {
 
     @After
     public void tearDown() {
+        driver.close();
         driver.quit();
     }
 

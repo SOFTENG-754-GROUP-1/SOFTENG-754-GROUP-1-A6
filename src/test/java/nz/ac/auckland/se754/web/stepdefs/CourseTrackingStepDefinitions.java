@@ -70,6 +70,7 @@ public class CourseTrackingStepDefinitions{
 
     @After
     public void tearDown() {
+        driver.close();
         driver.quit();
     }
 
