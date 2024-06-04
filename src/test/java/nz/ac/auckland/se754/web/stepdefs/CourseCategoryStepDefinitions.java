@@ -36,14 +36,6 @@ public class CourseCategoryStepDefinitions {
     public void i_should_see_the_courses_under_each_category() {
         Map<String, String[]> categoryCoursesMap = courseCategoryPage.getCategoryCoursesAsMap();
 
-        System.out.println("hello");
-
-        for (String name : categoryCoursesMap.keySet()) {
-            System.out.println("hello");
-
-            System.out.println(name);
-        }
-
         String[] categoryOneCourses = categoryCoursesMap.get("Category-1");
         assertArrayEquals(new String[]{"course1", "course2"}, categoryOneCourses);
 
